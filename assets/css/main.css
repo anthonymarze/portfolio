@@ -2435,6 +2435,11 @@ input, select, textarea {
 			ul.icons li .icon:before {
 				font-size: 2.5em;
 			}
+		
+	svg {
+		width: 70px;
+		margin-right: 10px;
+	}
 
 /* Table */
 
@@ -2675,6 +2680,11 @@ input, select, textarea {
 				width: 100%;
 			}
 
+			.features article .image img:hover {
+				opacity: 0.75;
+				transition: opacity 0.2s ease-in-out;
+			}
+
 		.features article .inner {
 			display: inline-block;
 			vertical-align: middle;
@@ -2736,7 +2746,7 @@ input, select, textarea {
 			-webkit-flex-shrink: 0;
 			-ms-flex-shrink: 0;
 			flex-shrink: 0;
-			padding: 3em;
+			padding: 2em;
 		}
 
 			#header > header .avatar {
@@ -2763,7 +2773,7 @@ input, select, textarea {
 			flex-shrink: 0;
 			bottom: 0;
 			left: 0;
-			padding: 2em;
+			padding: 1em;
 			width: 100%;
 		}
 
@@ -2859,17 +2869,26 @@ input, select, textarea {
 		margin-left: 1em;
 	}
 
-	#resume {
-		margin: 2em 0;
+	#contact-items {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
 
-	#resume-links {
-		display: inline;
+	.sub-contact {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		text-align: center;
 	}
 
-	#resume-links a {
-		margin: 0 0.7em;
-		cursor: pointer;
+	.contact-breakline {
+		margin: 5px -5px;
+		border: 1px solid #e4e4e4;
+	}
+
+	.sub-contact h4 {
+		margin: 0;
 	}
 
 /* Footer */
